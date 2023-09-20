@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Minimalistic</string>
+    <string name="developer_name">Tanmay and Swati</string>
+    <string name="splash_screen_quote">"Make it a good day, start with a to-do list."</string>
+</resources>

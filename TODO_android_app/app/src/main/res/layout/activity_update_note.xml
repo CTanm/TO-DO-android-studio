@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/relative_layout_background"
+    tools:context=".Activity.NewNoteActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/noteTitleEditTextUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Note title..."
+            android:background="@drawable/note_background"
+            android:padding="20dp"
+            android:fontFamily="@font/product_sans_bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"/>
+
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/noteSubTitleEditTextUpdate"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Note subtitle..."
+            android:background="@drawable/note_background"
+            android:padding="20dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"/>
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:fontFamily="@font/product_sans_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Priority:"
+                android:padding="10dp"
+                android:background="@drawable/note_background"/>
+
+            <ImageView
+                android:id="@+id/redPriorityUpdate"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/red_priority"/>
+
+            <ImageView
+                android:id="@+id/yellowPriorityUpdate"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/yellow_priority"/>
+
+
+            <ImageView
+                android:id="@+id/greenPriorityUpdate"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/green_priority"/>
+
+            <EditText
+                android:inputType="none"
+                android:gravity="center"
+                android:id="@+id/deadLineDateEditTextUpdate"
+                android:padding="10dp"
+                android:background="@drawable/note_background"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/product_sans_regular"
+                android:textColor="@color/black"
+                android:hint="DedLine Date..."/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/noteEditTextUpdate"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:hint="Note..."
+            android:background="@drawable/note_background"
+            android:padding="20dp"
+            android:gravity="start"
+            android:fontFamily="@font/product_sans_regular"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/doneButtonUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/lightBlue"
+        android:src="@drawable/ic_baseline_done_24"
+        android:layout_margin="30dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:background="@drawable/cardbackground"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/cardViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/note_background"
+            android:fontFamily="@font/product_sans_bold"
+            android:hint="title"
+            android:padding="15dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:id="@+id/cardViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/note_background"
+            android:fontFamily="@font/product_sans_regular"
+            android:hint="Date"
+            android:padding="10dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:editable="false"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:id="@+id/textViewPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/note_background"
+                android:fontFamily="@font/product_sans_regular"
+                android:padding="10dp"
+                android:text="Priority:" />
+
+
+            <ImageView
+                android:id="@+id/cardViewPriority"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/green_priority" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginStart="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DeadLine:"
+                android:background="@drawable/deadline_back"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+                android:id="@+id/cardViewDeadLineDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/note_background"
+                android:fontFamily="@font/product_sans_regular"
+                android:hint="Date"
+                android:padding="10dp">
+            </TextView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

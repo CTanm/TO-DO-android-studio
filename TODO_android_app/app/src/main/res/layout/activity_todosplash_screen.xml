@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TODOSplashScreen">
+
+    <ImageView
+        android:contentDescription="Minimalistic"
+        android:id="@+id/splashImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/notesicon"
+        app:layout_constraintVertical_bias="0.283" />
+
+    <TextView
+        android:fontFamily="@font/product_sans_regular"
+        android:textColor="@color/black"
+        android:text="By"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView" />
+
+    <TextView
+        android:fontFamily="@font/product_sans_regular"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanmay and Swati"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:textColor="@color/lightBlue"
+        android:layout_margin="10dp"
+        android:textSize="40sp"
+        android:fontFamily="@font/product_sans_bold"
+        android:id="@+id/textViewAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minimalistic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splashImage" />
+
+    <TextView
+        android:id="@+id/textViewQuotes"
+        android:layout_width="209dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/product_sans_bold_italic"
+        android:gravity="center"
+        android:text="Make it a good day, start with a to-do list."
+        android:textColor="@color/lightBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppName" />
+
+    <ProgressBar
+        android:theme="@style/ProgressBar"
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuotes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
